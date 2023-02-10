@@ -238,6 +238,7 @@ ul li {
   width: 53px;
   height: 4px;
   background: var(--brand-color);
+  color: var(--brand-color);
 }
 .tel-number {
   color: var(--subtext-color);
