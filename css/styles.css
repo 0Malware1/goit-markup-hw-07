@@ -31,14 +31,14 @@ body {
   fill: var(--brand-color);
 }
 
-.icons-svg {
+.team__icons-svg {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 42px;
+  padding-bottom: 30px;
 }
 
-.clickable {
+.team__media {
   height: 44px;
   width: 44px;
   display: flex;
@@ -49,13 +49,13 @@ body {
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clickable:hover {
+.team__media:hover {
   background: var(--brand-color);
   border-radius: 100%;
   fill: var(--sub-backgrounds3);
 }
 
-.main-icons {
+.descriptions__icons {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,7 +64,7 @@ body {
   height: 120px;
   padding: 0;
 }
-.employees-links-svg {
+.team__list {
   display: flex;
 
   justify-content: space-around;
@@ -130,10 +130,7 @@ body {
   cursor: pointer;
   border-radius: 100%;
 }
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+
 .container {
   margin: 0 auto;
 
@@ -246,13 +243,13 @@ ul li {
   color: var(--subtext-color);
   text-decoration: none;
 }
-.bsolutions {
+.solutions__wrapper {
   color: var(--sub-backgrounds3);
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-.bsolutions-background {
+.solutions {
   background-image: url(../images/main-background.jpg),
     url(../images/ImgOverlay.png);
   background-size: cover;
@@ -263,7 +260,7 @@ ul li {
   display: flex;
   align-items: center;
 }
-.bsolutions h1 {
+.solutions__wrapper h1 {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -275,7 +272,7 @@ ul li {
   letter-spacing: 0.06em;
   text-align: center;
 }
-.buttons {
+.solutions__button {
   color: var(--sub-backgrounds3);
   background-color: var(--brand-color);
   border: none;
@@ -300,35 +297,41 @@ ul li {
   padding: 0;
   display: flex;
   justify-content: space-between;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .descriptions h4 {
   color: var(--main-text-color);
 }
-.list-descriptions {
+.descriptions__list {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
   gap: 30px;
   padding: 15px;
 }
-
-.wrapper h2 {
+.occupation {
+  margin-bottom: 94px;
+}
+.occupation__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  margin: 0;
 }
-.wrapper-gallery {
+.occupation__gallery {
   display: flex;
   flex-flow: row;
   padding: 0;
+  margin: 0;
   justify-content: space-between;
   margin-top: 50px;
 }
-.wrapper-gallery li {
+.occupation__gallery-element {
   position: relative;
 }
-.wrapper-gallery li:nth-child(1)::after {
+.occupation__gallery-element:nth-child(1)::after {
   content: "APLIKACJE KOMPUTEROWE";
   position: absolute;
   width: 370px;
@@ -344,7 +347,7 @@ ul li {
   justify-content: center;
   align-items: center;
 }
-.wrapper-gallery li:nth-child(2)::after {
+.occupation__gallery-element:nth-child(2)::after {
   content: "APLIKACJE MOBILNE";
   position: absolute;
   width: 370px;
@@ -360,7 +363,7 @@ ul li {
   justify-content: center;
   align-items: center;
 }
-.wrapper-gallery li:nth-child(3)::after {
+.occupation__gallery-element:nth-child(3)::after {
   content: "ROZWIĄZANIA GRAFICZNE";
   position: absolute;
   width: 370px;
@@ -376,36 +379,39 @@ ul li {
   justify-content: center;
   align-items: center;
 }
-.subtext {
+.team__subtext {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   color: var(--subtext-color);
-}
-.t {
   line-height: 1.17;
+  padding-bottom: 0;
   text-align: center;
-  padding-bottom: 30px;
-}
-.team {
-  background-color: var(--sub-backgrounds2);
-  margin: 0;
 }
 
-.team h2 {
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--sub-backgrounds2);
+  background-size: cover;
+}
+
+.team__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
 }
-.employee-list {
+.team__employee-list {
   display: flex;
   flex-flow: row;
   padding: 0;
   margin: 0;
   justify-content: space-between;
 }
-.employees {
+.team__employees {
   background-color: var(--sub-backgrounds3);
   font-weight: 500;
   font-size: 16px;
@@ -413,8 +419,7 @@ ul li {
   border-radius: 5px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
 }
-.employees h4 {
-  font-weight: 500;
+.team__sub-title {
   text-align: center;
 }
 .footer-rows {
