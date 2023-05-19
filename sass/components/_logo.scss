@@ -1,0 +1,11 @@
+.logo {
+  width: 145px;
+  height: 31px;
+  font-family: $logoFont;
+  font-weight: $fontWeightMain;
+  font-size: 26px;
+  color: $logoColor;
+  &__highlight {
+    color: $brandColor;
+  }
+}
