@@ -1,0 +1,31 @@
+.nav {
+  &__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 46px;
+    list-style: none;
+  }
+  &__links {
+    color: $mainTextColor;
+    text-decoration: none;
+    &:hover {
+      color: $brandColor;
+    }
+  }
+}
+.links--active {
+  color: $brandColor;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    border-radius: 2px;
+    left: 0;
+    top: 45px;
+    width: 53px;
+    height: 4px;
+    background: $brandColor;
+  }
+}

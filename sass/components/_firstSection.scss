@@ -1,0 +1,30 @@
+.hero {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  background-image: url(../images/main-background.jpg),
+    url(../images/ImgOverlay.png);
+  background-size: cover;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  &__title {
+    font-weight: 900;
+    font-size: 44px;
+    color: $HighlightColor;
+    text-align: center;
+    letter-spacing: 0.06em;
+    line-height: 60px;
+    margin: 0;
+  }
+  &__button {
+    margin-top: 30px;
+    font-size: 16px;
+    width: 200px;
+    height: 50px;
+  }
+}

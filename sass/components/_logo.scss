@@ -5,7 +5,14 @@
   font-weight: $fontWeightMain;
   font-size: 26px;
   color: $logoColor;
+  text-decoration: none;
   &__highlight {
     color: $brandColor;
   }
+  &:hover {
+    color: $brandColor;
+  }
+}
+.footer__logo {
+  color: $HighlightColor;
 }

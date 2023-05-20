@@ -1,0 +1,31 @@
+.team {
+  background-color: $complimentaryColor;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  &__employees {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 0;
+  }
+}
+.profile {
+  background-color: $HighlightColor;
+  list-style: none;
+  border-radius: 5px;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+  font-weight: $fontWeightComplementary;
+  font-size: $fontSizeSecondary;
+  &__title {
+    text-align: center;
+    color: $mainTextColor;
+  }
+  &__subtext {
+    text-align: center;
+    color: $secondaryTextColor;
+  }
+  &__media {
+    padding-bottom: 30px;
+  }
+}

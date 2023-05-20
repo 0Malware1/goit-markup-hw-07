@@ -1,0 +1,34 @@
+.traits {
+  &__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 0;
+  }
+}
+.desc {
+  padding: 0;
+  &__element {
+    list-style: none;
+  }
+  &__icon-area {
+    background-color: $complimentaryColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    padding: 0;
+  }
+  &__title {
+    color: $mainTextColor;
+    font-weight: $fontWeightMain;
+  }
+  &__text {
+    color: $secondaryTextColor;
+    text-align: justify;
+    font-weight: $fontWeightSecondary;
+    letter-spacing: 0.03em;
+  }
+}

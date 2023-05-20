@@ -1,0 +1,33 @@
+.contacts {
+  margin: 0;
+  padding: 0;
+  color: $secondaryTextColor;
+  font-size: $fontSizeMain;
+  &:hover {
+    color: $brandColor;
+  }
+  &__item {
+    color: $secondaryTextColor;
+    & a {
+      text-decoration: none;
+      color: $secondaryTextColor;
+    }
+    // &:hover {
+    //   color: $brandColor;
+    //   fill: $brandColor;
+    // }
+  }
+  &__link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: nowrap;
+    text-decoration: none;
+  }
+  &:hover &__link:hover {
+    color: $brandColor;
+    fill: $brandColor;
+  }
+}

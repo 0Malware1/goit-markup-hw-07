@@ -1,0 +1,79 @@
+.footer {
+  background-color: $minorColor;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+  &__contact {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .address {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    margin-top: 20px;
+    font-style: normal;
+
+    &__headquarters {
+      margin: 0;
+      color: $HighlightColor;
+      font-weight: $fontWeightSecondary;
+    }
+  }
+  .contacts--footer {
+    text-decoration: none;
+    color: #ffffff99;
+    &:hover {
+      color: $brandColor;
+    }
+  }
+  &__title {
+    color: $HighlightColor;
+  }
+}
+.social-media {
+  &__item--footer {
+    background-color: #ffffff1a;
+    border-radius: 100%;
+    fill: $HighlightColor;
+    &:hover {
+      background-color: $brandColor;
+    }
+  }
+}
+.form-register {
+  display: flex;
+  gap: 12px;
+  &__input {
+    background: none;
+    width: 358px;
+    height: 50px;
+    border: 1px solid #ffffff4d;
+    border-radius: 4px;
+    padding-left: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: justify-content;
+    color: #ffffff99;
+
+    &:placeholder-shown {
+      color: #ffffff99;
+    }
+  }
+  &__send {
+    height: 50px;
+    width: 200px;
+    fill: $HighlightColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    font-size: $fontSizeSecondary;
+  }
+}
