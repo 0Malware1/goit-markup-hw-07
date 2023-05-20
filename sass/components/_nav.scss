@@ -9,6 +9,8 @@
   &__links {
     color: $mainTextColor;
     text-decoration: none;
+    transition-duration: $animationDuration;
+    transition-timing-function: $animationtimingfunction;
     &:hover {
       color: $brandColor;
     }

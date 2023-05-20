@@ -46,7 +46,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 100%;
     fill: $svgColors;
+    transition-duration: $animationDuration;
+    transition-timing-function: $animationtimingfunction;
     &:hover {
       background-color: $brandColor;
       border-radius: 100%;

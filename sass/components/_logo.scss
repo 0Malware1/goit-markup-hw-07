@@ -6,6 +6,8 @@
   font-size: 26px;
   color: $logoColor;
   text-decoration: none;
+  transition-duration: $animationDuration;
+  transition-timing-function: $animationtimingfunction;
   &__highlight {
     color: $brandColor;
   }

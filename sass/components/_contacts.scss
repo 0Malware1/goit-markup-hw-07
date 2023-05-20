@@ -3,6 +3,8 @@
   padding: 0;
   color: $secondaryTextColor;
   font-size: $fontSizeMain;
+  transition-duration: $animationDuration;
+  transition-timing-function: $animationtimingfunction;
   &:hover {
     color: $brandColor;
   }
@@ -25,6 +27,8 @@
     gap: 10px;
     flex-wrap: nowrap;
     text-decoration: none;
+    transition-duration: $animationDuration;
+    transition-timing-function: $animationtimingfunction;
   }
   &:hover &__link:hover {
     color: $brandColor;
